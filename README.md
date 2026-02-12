@@ -85,27 +85,33 @@ Run tests:
 ```
 npm run test
 ```
-# 📚 Storybook
+## 📚 Storybook
 
-- Stories include:
+Stories include:
 
 - Default
-
 - Constraint violations
-
 - Blackout dates
-
 - DST edge case
-
 - Partial selection
-
 - Keyboard-only usage
-
 - High contrast mode
 
-- Run locally:
+Run locally:
+
+
 
 - npm run storybook
+## 🏗 Technical Highlights
+
+- Fully controlled date engine (no date libraries used)
+- Custom DST-safe zoned conversion logic
+- Validation pipeline separated from UI
+- Stateless calendar grid component
+- Range state managed via dedicated hook
+- Strong separation of concerns
+- Strict TypeScript enforcement
+
 
 # 🚀 Getting Started
 
@@ -118,7 +124,7 @@ npm install
 ```
 npm run dev
 ```
-# 🏗 Project Structure:-
+## 🏗 Project Structure:-
 
 ```
 src/
@@ -157,8 +163,26 @@ src/
 
 - No component library dependencies
 
-# 📦 Deployment
-Storybook preview is deployed via Chromatic / Vercel.
+# Why This Exist
+This component was built as part of an internship technical assessment to demonstrate deep understanding of timezone handling, accessibility, keyboard navigation, validation pipelines, and scalable React architecture — without relying on external component libraries.
+
+## 📉 Dependency Philosophy
+
+This project intentionally avoids:
+
+- UI component libraries (Material UI, Radix, Chakra, etc.)
+- Date libraries (moment, dayjs, date-fns)
+- AI-based UI generators
+
+All logic and UI primitives are built from scratch to demonstrate engineering depth.
+
+
+
+## 🔗 Live Preview
+
+Storybook: https://uzence-assignment-weld-ten.vercel.app/?path=/docs/components-datetimerangepicker--docs 
+GitHub Repository: https://github.com/Sumit0-hash/Uzence-assignment
+
 
 # 📄 License
 
